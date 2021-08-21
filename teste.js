@@ -1,0 +1,1 @@
+console.log("projetos blue Edtech")
