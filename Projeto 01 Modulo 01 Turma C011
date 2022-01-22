@@ -1,0 +1,59 @@
+console.log("A jornada do Heroi")
+
+console.log()
+
+console.log("Seja bem vindo a caverna do dragao, hoje voce ira lutar com o dragao infernal")
+
+console.log()
+
+console.log("iremos fazer 5 perguntas a voce e no final iremos mostrar seu resultado nesta jornada.")
+
+console.log()
+
+console.log("As respostas devem ser objetivas sim ou nao, qualquer resposta diferente nao sera contabilizada!!!")
+
+console.log()
+
+
+
+function pergunta(texto){
+  let resposta = String(prompt(texto))
+  
+  if ((resposta.toLowerCase()) == 'sim'){
+    return 1;
+  } else {
+    return 0;
+  }
+
+}
+
+let pergunta1 = pergunta("Voce achou a espada magica ?")
+
+console.log()
+
+let pergunta2 = pergunta("Esta no caminho da caverna ?")
+
+console.log()
+
+let pergunta3 = pergunta("derrotou o elfo da selva ?")
+
+console.log()
+
+let pergunta4 = pergunta("passou pela ponte do poder ?")
+
+console.log()
+
+let pergunta5 = pergunta("Chegou na caverna e matou o dragao ?")
+
+console.log()
+
+let soma = pergunta1+pergunta2+pergunta3+pergunta4+pergunta5
+
+let condicoes =[ "Você falha miseravelmente.","Você falha, mas ainda consegue fugir da situação.", "Você falha, mas ainda consegue fugir da situação.", "Você chega perto de conseguir alcançar seu objetivo, mas acaba falhando por pouco", "Depois de muito esforço você conquista seu objetivo, embora não de maneira perfeita" , "Você triunfa de maneira inquestionável e seus feitos serão lembrados por muitas gerações"] 
+
+console.log()
+console.log()
+console.log()
+
+
+console.log(` ${condicoes[soma]} `)
